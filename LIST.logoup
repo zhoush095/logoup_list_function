@@ -1,0 +1,672 @@
+// FUNC LIST1 (@out)
+//   IF (@out = 0) THEN
+//     RETURN 0
+//   ELSE IF (@out = 1) THEN
+//     RETURN 0
+//   ELSE
+//     EXIT()
+//   END
+// END
+
+// FUNC LIST2 (@out)
+//   IF (@out = 0) THEN
+//     RETURN 10
+//   ELSE IF (@out = 1) THEN
+//     RETURN 10
+//   ELSE
+//     EXIT()
+//   END
+// END
+
+// FUNC LIST3 (@out)
+//   IF (@out = 0) THEN
+//     RETURN 20
+//   ELSE IF (@out = 1) THEN
+//     RETURN 0
+//   ELSE
+//     EXIT()
+//   END
+// END
+
+// GOTO LIST1(0), LIST1(1)
+
+VAR LIST_4_LEN = 2
+
+VAR @list_4_0 = false
+VAR @list_4_1 = false
+
+FUNC LIST_4(@list_number, @out_or_edit, @edit)
+  // if @out_or_edit is true then out else edit
+  IF (@out_or_edit = true) THEN
+    IF (@list_number = 0) THEN
+      @list_4_0 = @edit
+      RETURN TRUE
+    //
+    ELSE IF (@list_number = 1) THEN
+      @list_4_1 = @edit
+      RETURN TRUE
+    //
+    END
+  END
+  IF (@list_number = 0) THEN
+    RETURN @list_4_0
+  //
+  ELSE IF (@list_number = 1) THEN
+    RETURN @list_4_1
+  // 
+  END
+END
+
+LIST_4(0,true,10)
+
+GO LIST_4(0,false,false)
+
+VAR LIST_2_LEN = 100
+
+VAR @list_2_0 = false
+VAR @list_2_1 = false
+VAR @list_2_2 = false
+VAR @list_2_3 = false
+VAR @list_2_4 = false
+VAR @list_2_5 = false
+VAR @list_2_6 = false
+VAR @list_2_7 = false
+VAR @list_2_8 = false
+VAR @list_2_9 = false
+VAR @list_2_10 = false
+VAR @list_2_11 = false
+VAR @list_2_12 = false
+VAR @list_2_13 = false
+VAR @list_2_14 = false
+VAR @list_2_15 = false
+VAR @list_2_16 = false
+VAR @list_2_17 = false
+VAR @list_2_18 = false
+VAR @list_2_19 = false
+VAR @list_2_20 = false
+VAR @list_2_21 = false
+VAR @list_2_22 = false
+VAR @list_2_23 = false
+VAR @list_2_24 = false
+VAR @list_2_25 = false
+VAR @list_2_26 = false
+VAR @list_2_27 = false
+VAR @list_2_28 = false
+VAR @list_2_29 = false
+VAR @list_2_30 = false
+VAR @list_2_31 = false
+VAR @list_2_32 = false
+VAR @list_2_33 = false
+VAR @list_2_34 = false
+VAR @list_2_35 = false
+VAR @list_2_36 = false
+VAR @list_2_37 = false
+VAR @list_2_38 = false
+VAR @list_2_39 = false
+VAR @list_2_40 = false
+VAR @list_2_41 = false
+VAR @list_2_42 = false
+VAR @list_2_43 = false
+VAR @list_2_44 = false
+VAR @list_2_45 = false
+VAR @list_2_46 = false
+VAR @list_2_47 = false
+VAR @list_2_48 = false
+VAR @list_2_49 = false
+VAR @list_2_50 = false
+VAR @list_2_51 = false
+VAR @list_2_52 = false
+VAR @list_2_53 = false
+VAR @list_2_54 = false
+VAR @list_2_55 = false
+VAR @list_2_56 = false
+VAR @list_2_57 = false
+VAR @list_2_58 = false
+VAR @list_2_59 = false
+VAR @list_2_60 = false
+VAR @list_2_61 = false
+VAR @list_2_62 = false
+VAR @list_2_63 = false
+VAR @list_2_64 = false
+VAR @list_2_65 = false
+VAR @list_2_66 = false
+VAR @list_2_67 = false
+VAR @list_2_68 = false
+VAR @list_2_69 = false
+VAR @list_2_70 = false
+VAR @list_2_71 = false
+VAR @list_2_72 = false
+VAR @list_2_73 = false
+VAR @list_2_74 = false
+VAR @list_2_75 = false
+VAR @list_2_76 = false
+VAR @list_2_77 = false
+VAR @list_2_78 = false
+VAR @list_2_79 = false
+VAR @list_2_80 = false
+VAR @list_2_81 = false
+VAR @list_2_82 = false
+VAR @list_2_83 = false
+VAR @list_2_84 = false
+VAR @list_2_85 = false
+VAR @list_2_86 = false
+VAR @list_2_87 = false
+VAR @list_2_88 = false
+VAR @list_2_89 = false
+VAR @list_2_90 = false
+VAR @list_2_91 = false
+VAR @list_2_92 = false
+VAR @list_2_93 = false
+VAR @list_2_94 = false
+VAR @list_2_95 = false
+VAR @list_2_96 = false
+VAR @list_2_97 = false
+VAR @list_2_98 = false
+VAR @list_2_99 = false
+
+FUNC LIST_2(@list_number, @out_or_edit, @edit)
+	IF (@out_or_edit = true) THEN
+		IF (@list_number = 0) THEN
+			@list_2_0 = @edit
+			RETURN true
+		ELSE IF (@list_number = 1) THEN
+			@list_2_1 = @edit
+			RETURN true
+		ELSE IF (@list_number = 2) THEN
+			@list_2_2 = @edit
+			RETURN true
+		ELSE IF (@list_number = 3) THEN
+			@list_2_3 = @edit
+			RETURN true
+		ELSE IF (@list_number = 4) THEN
+			@list_2_4 = @edit
+			RETURN true
+		ELSE IF (@list_number = 5) THEN
+			@list_2_5 = @edit
+			RETURN true
+		ELSE IF (@list_number = 6) THEN
+			@list_2_6 = @edit
+			RETURN true
+		ELSE IF (@list_number = 7) THEN
+			@list_2_7 = @edit
+			RETURN true
+		ELSE IF (@list_number = 8) THEN
+			@list_2_8 = @edit
+			RETURN true
+		ELSE IF (@list_number = 9) THEN
+			@list_2_9 = @edit
+			RETURN true
+		ELSE IF (@list_number = 10) THEN
+			@list_2_10 = @edit
+			RETURN true
+		ELSE IF (@list_number = 11) THEN
+			@list_2_11 = @edit
+			RETURN true
+		ELSE IF (@list_number = 12) THEN
+			@list_2_12 = @edit
+			RETURN true
+		ELSE IF (@list_number = 13) THEN
+			@list_2_13 = @edit
+			RETURN true
+		ELSE IF (@list_number = 14) THEN
+			@list_2_14 = @edit
+			RETURN true
+		ELSE IF (@list_number = 15) THEN
+			@list_2_15 = @edit
+			RETURN true
+		ELSE IF (@list_number = 16) THEN
+			@list_2_16 = @edit
+			RETURN true
+		ELSE IF (@list_number = 17) THEN
+			@list_2_17 = @edit
+			RETURN true
+		ELSE IF (@list_number = 18) THEN
+			@list_2_18 = @edit
+			RETURN true
+		ELSE IF (@list_number = 19) THEN
+			@list_2_19 = @edit
+			RETURN true
+		ELSE IF (@list_number = 20) THEN
+			@list_2_20 = @edit
+			RETURN true
+		ELSE IF (@list_number = 21) THEN
+			@list_2_21 = @edit
+			RETURN true
+		ELSE IF (@list_number = 22) THEN
+			@list_2_22 = @edit
+			RETURN true
+		ELSE IF (@list_number = 23) THEN
+			@list_2_23 = @edit
+			RETURN true
+		ELSE IF (@list_number = 24) THEN
+			@list_2_24 = @edit
+			RETURN true
+		ELSE IF (@list_number = 25) THEN
+			@list_2_25 = @edit
+			RETURN true
+		ELSE IF (@list_number = 26) THEN
+			@list_2_26 = @edit
+			RETURN true
+		ELSE IF (@list_number = 27) THEN
+			@list_2_27 = @edit
+			RETURN true
+		ELSE IF (@list_number = 28) THEN
+			@list_2_28 = @edit
+			RETURN true
+		ELSE IF (@list_number = 29) THEN
+			@list_2_29 = @edit
+			RETURN true
+		ELSE IF (@list_number = 30) THEN
+			@list_2_30 = @edit
+			RETURN true
+		ELSE IF (@list_number = 31) THEN
+			@list_2_31 = @edit
+			RETURN true
+		ELSE IF (@list_number = 32) THEN
+			@list_2_32 = @edit
+			RETURN true
+		ELSE IF (@list_number = 33) THEN
+			@list_2_33 = @edit
+			RETURN true
+		ELSE IF (@list_number = 34) THEN
+			@list_2_34 = @edit
+			RETURN true
+		ELSE IF (@list_number = 35) THEN
+			@list_2_35 = @edit
+			RETURN true
+		ELSE IF (@list_number = 36) THEN
+			@list_2_36 = @edit
+			RETURN true
+		ELSE IF (@list_number = 37) THEN
+			@list_2_37 = @edit
+			RETURN true
+		ELSE IF (@list_number = 38) THEN
+			@list_2_38 = @edit
+			RETURN true
+		ELSE IF (@list_number = 39) THEN
+			@list_2_39 = @edit
+			RETURN true
+		ELSE IF (@list_number = 40) THEN
+			@list_2_40 = @edit
+			RETURN true
+		ELSE IF (@list_number = 41) THEN
+			@list_2_41 = @edit
+			RETURN true
+		ELSE IF (@list_number = 42) THEN
+			@list_2_42 = @edit
+			RETURN true
+		ELSE IF (@list_number = 43) THEN
+			@list_2_43 = @edit
+			RETURN true
+		ELSE IF (@list_number = 44) THEN
+			@list_2_44 = @edit
+			RETURN true
+		ELSE IF (@list_number = 45) THEN
+			@list_2_45 = @edit
+			RETURN true
+		ELSE IF (@list_number = 46) THEN
+			@list_2_46 = @edit
+			RETURN true
+		ELSE IF (@list_number = 47) THEN
+			@list_2_47 = @edit
+			RETURN true
+		ELSE IF (@list_number = 48) THEN
+			@list_2_48 = @edit
+			RETURN true
+		ELSE IF (@list_number = 49) THEN
+			@list_2_49 = @edit
+			RETURN true
+		ELSE IF (@list_number = 50) THEN
+			@list_2_50 = @edit
+			RETURN true
+		ELSE IF (@list_number = 51) THEN
+			@list_2_51 = @edit
+			RETURN true
+		ELSE IF (@list_number = 52) THEN
+			@list_2_52 = @edit
+			RETURN true
+		ELSE IF (@list_number = 53) THEN
+			@list_2_53 = @edit
+			RETURN true
+		ELSE IF (@list_number = 54) THEN
+			@list_2_54 = @edit
+			RETURN true
+		ELSE IF (@list_number = 55) THEN
+			@list_2_55 = @edit
+			RETURN true
+		ELSE IF (@list_number = 56) THEN
+			@list_2_56 = @edit
+			RETURN true
+		ELSE IF (@list_number = 57) THEN
+			@list_2_57 = @edit
+			RETURN true
+		ELSE IF (@list_number = 58) THEN
+			@list_2_58 = @edit
+			RETURN true
+		ELSE IF (@list_number = 59) THEN
+			@list_2_59 = @edit
+			RETURN true
+		ELSE IF (@list_number = 60) THEN
+			@list_2_60 = @edit
+			RETURN true
+		ELSE IF (@list_number = 61) THEN
+			@list_2_61 = @edit
+			RETURN true
+		ELSE IF (@list_number = 62) THEN
+			@list_2_62 = @edit
+			RETURN true
+		ELSE IF (@list_number = 63) THEN
+			@list_2_63 = @edit
+			RETURN true
+		ELSE IF (@list_number = 64) THEN
+			@list_2_64 = @edit
+			RETURN true
+		ELSE IF (@list_number = 65) THEN
+			@list_2_65 = @edit
+			RETURN true
+		ELSE IF (@list_number = 66) THEN
+			@list_2_66 = @edit
+			RETURN true
+		ELSE IF (@list_number = 67) THEN
+			@list_2_67 = @edit
+			RETURN true
+		ELSE IF (@list_number = 68) THEN
+			@list_2_68 = @edit
+			RETURN true
+		ELSE IF (@list_number = 69) THEN
+			@list_2_69 = @edit
+			RETURN true
+		ELSE IF (@list_number = 70) THEN
+			@list_2_70 = @edit
+			RETURN true
+		ELSE IF (@list_number = 71) THEN
+			@list_2_71 = @edit
+			RETURN true
+		ELSE IF (@list_number = 72) THEN
+			@list_2_72 = @edit
+			RETURN true
+		ELSE IF (@list_number = 73) THEN
+			@list_2_73 = @edit
+			RETURN true
+		ELSE IF (@list_number = 74) THEN
+			@list_2_74 = @edit
+			RETURN true
+		ELSE IF (@list_number = 75) THEN
+			@list_2_75 = @edit
+			RETURN true
+		ELSE IF (@list_number = 76) THEN
+			@list_2_76 = @edit
+			RETURN true
+		ELSE IF (@list_number = 77) THEN
+			@list_2_77 = @edit
+			RETURN true
+		ELSE IF (@list_number = 78) THEN
+			@list_2_78 = @edit
+			RETURN true
+		ELSE IF (@list_number = 79) THEN
+			@list_2_79 = @edit
+			RETURN true
+		ELSE IF (@list_number = 80) THEN
+			@list_2_80 = @edit
+			RETURN true
+		ELSE IF (@list_number = 81) THEN
+			@list_2_81 = @edit
+			RETURN true
+		ELSE IF (@list_number = 82) THEN
+			@list_2_82 = @edit
+			RETURN true
+		ELSE IF (@list_number = 83) THEN
+			@list_2_83 = @edit
+			RETURN true
+		ELSE IF (@list_number = 84) THEN
+			@list_2_84 = @edit
+			RETURN true
+		ELSE IF (@list_number = 85) THEN
+			@list_2_85 = @edit
+			RETURN true
+		ELSE IF (@list_number = 86) THEN
+			@list_2_86 = @edit
+			RETURN true
+		ELSE IF (@list_number = 87) THEN
+			@list_2_87 = @edit
+			RETURN true
+		ELSE IF (@list_number = 88) THEN
+			@list_2_88 = @edit
+			RETURN true
+		ELSE IF (@list_number = 89) THEN
+			@list_2_89 = @edit
+			RETURN true
+		ELSE IF (@list_number = 90) THEN
+			@list_2_90 = @edit
+			RETURN true
+		ELSE IF (@list_number = 91) THEN
+			@list_2_91 = @edit
+			RETURN true
+		ELSE IF (@list_number = 92) THEN
+			@list_2_92 = @edit
+			RETURN true
+		ELSE IF (@list_number = 93) THEN
+			@list_2_93 = @edit
+			RETURN true
+		ELSE IF (@list_number = 94) THEN
+			@list_2_94 = @edit
+			RETURN true
+		ELSE IF (@list_number = 95) THEN
+			@list_2_95 = @edit
+			RETURN true
+		ELSE IF (@list_number = 96) THEN
+			@list_2_96 = @edit
+			RETURN true
+		ELSE IF (@list_number = 97) THEN
+			@list_2_97 = @edit
+			RETURN true
+		ELSE IF (@list_number = 98) THEN
+			@list_2_98 = @edit
+			RETURN true
+		ELSE IF (@list_number = 99) THEN
+			@list_2_99 = @edit
+			RETURN true
+		END
+	IF (@list_number = 0) THEN
+		RETURN @list_2_0
+	ELSE IF (@list_number = 1) THEN
+		RETURN @list_2_1
+	ELSE IF (@list_number = 2) THEN
+		RETURN @list_2_2
+	ELSE IF (@list_number = 3) THEN
+		RETURN @list_2_3
+	ELSE IF (@list_number = 4) THEN
+		RETURN @list_2_4
+	ELSE IF (@list_number = 5) THEN
+		RETURN @list_2_5
+	ELSE IF (@list_number = 6) THEN
+		RETURN @list_2_6
+	ELSE IF (@list_number = 7) THEN
+		RETURN @list_2_7
+	ELSE IF (@list_number = 8) THEN
+		RETURN @list_2_8
+	ELSE IF (@list_number = 9) THEN
+		RETURN @list_2_9
+	ELSE IF (@list_number = 10) THEN
+		RETURN @list_2_10
+	ELSE IF (@list_number = 11) THEN
+		RETURN @list_2_11
+	ELSE IF (@list_number = 12) THEN
+		RETURN @list_2_12
+	ELSE IF (@list_number = 13) THEN
+		RETURN @list_2_13
+	ELSE IF (@list_number = 14) THEN
+		RETURN @list_2_14
+	ELSE IF (@list_number = 15) THEN
+		RETURN @list_2_15
+	ELSE IF (@list_number = 16) THEN
+		RETURN @list_2_16
+	ELSE IF (@list_number = 17) THEN
+		RETURN @list_2_17
+	ELSE IF (@list_number = 18) THEN
+		RETURN @list_2_18
+	ELSE IF (@list_number = 19) THEN
+		RETURN @list_2_19
+	ELSE IF (@list_number = 20) THEN
+		RETURN @list_2_20
+	ELSE IF (@list_number = 21) THEN
+		RETURN @list_2_21
+	ELSE IF (@list_number = 22) THEN
+		RETURN @list_2_22
+	ELSE IF (@list_number = 23) THEN
+		RETURN @list_2_23
+	ELSE IF (@list_number = 24) THEN
+		RETURN @list_2_24
+	ELSE IF (@list_number = 25) THEN
+		RETURN @list_2_25
+	ELSE IF (@list_number = 26) THEN
+		RETURN @list_2_26
+	ELSE IF (@list_number = 27) THEN
+		RETURN @list_2_27
+	ELSE IF (@list_number = 28) THEN
+		RETURN @list_2_28
+	ELSE IF (@list_number = 29) THEN
+		RETURN @list_2_29
+	ELSE IF (@list_number = 30) THEN
+		RETURN @list_2_30
+	ELSE IF (@list_number = 31) THEN
+		RETURN @list_2_31
+	ELSE IF (@list_number = 32) THEN
+		RETURN @list_2_32
+	ELSE IF (@list_number = 33) THEN
+		RETURN @list_2_33
+	ELSE IF (@list_number = 34) THEN
+		RETURN @list_2_34
+	ELSE IF (@list_number = 35) THEN
+		RETURN @list_2_35
+	ELSE IF (@list_number = 36) THEN
+		RETURN @list_2_36
+	ELSE IF (@list_number = 37) THEN
+		RETURN @list_2_37
+	ELSE IF (@list_number = 38) THEN
+		RETURN @list_2_38
+	ELSE IF (@list_number = 39) THEN
+		RETURN @list_2_39
+	ELSE IF (@list_number = 40) THEN
+		RETURN @list_2_40
+	ELSE IF (@list_number = 41) THEN
+		RETURN @list_2_41
+	ELSE IF (@list_number = 42) THEN
+		RETURN @list_2_42
+	ELSE IF (@list_number = 43) THEN
+		RETURN @list_2_43
+	ELSE IF (@list_number = 44) THEN
+		RETURN @list_2_44
+	ELSE IF (@list_number = 45) THEN
+		RETURN @list_2_45
+	ELSE IF (@list_number = 46) THEN
+		RETURN @list_2_46
+	ELSE IF (@list_number = 47) THEN
+		RETURN @list_2_47
+	ELSE IF (@list_number = 48) THEN
+		RETURN @list_2_48
+	ELSE IF (@list_number = 49) THEN
+		RETURN @list_2_49
+	ELSE IF (@list_number = 50) THEN
+		RETURN @list_2_50
+	ELSE IF (@list_number = 51) THEN
+		RETURN @list_2_51
+	ELSE IF (@list_number = 52) THEN
+		RETURN @list_2_52
+	ELSE IF (@list_number = 53) THEN
+		RETURN @list_2_53
+	ELSE IF (@list_number = 54) THEN
+		RETURN @list_2_54
+	ELSE IF (@list_number = 55) THEN
+		RETURN @list_2_55
+	ELSE IF (@list_number = 56) THEN
+		RETURN @list_2_56
+	ELSE IF (@list_number = 57) THEN
+		RETURN @list_2_57
+	ELSE IF (@list_number = 58) THEN
+		RETURN @list_2_58
+	ELSE IF (@list_number = 59) THEN
+		RETURN @list_2_59
+	ELSE IF (@list_number = 60) THEN
+		RETURN @list_2_60
+	ELSE IF (@list_number = 61) THEN
+		RETURN @list_2_61
+	ELSE IF (@list_number = 62) THEN
+		RETURN @list_2_62
+	ELSE IF (@list_number = 63) THEN
+		RETURN @list_2_63
+	ELSE IF (@list_number = 64) THEN
+		RETURN @list_2_64
+	ELSE IF (@list_number = 65) THEN
+		RETURN @list_2_65
+	ELSE IF (@list_number = 66) THEN
+		RETURN @list_2_66
+	ELSE IF (@list_number = 67) THEN
+		RETURN @list_2_67
+	ELSE IF (@list_number = 68) THEN
+		RETURN @list_2_68
+	ELSE IF (@list_number = 69) THEN
+		RETURN @list_2_69
+	ELSE IF (@list_number = 70) THEN
+		RETURN @list_2_70
+	ELSE IF (@list_number = 71) THEN
+		RETURN @list_2_71
+	ELSE IF (@list_number = 72) THEN
+		RETURN @list_2_72
+	ELSE IF (@list_number = 73) THEN
+		RETURN @list_2_73
+	ELSE IF (@list_number = 74) THEN
+		RETURN @list_2_74
+	ELSE IF (@list_number = 75) THEN
+		RETURN @list_2_75
+	ELSE IF (@list_number = 76) THEN
+		RETURN @list_2_76
+	ELSE IF (@list_number = 77) THEN
+		RETURN @list_2_77
+	ELSE IF (@list_number = 78) THEN
+		RETURN @list_2_78
+	ELSE IF (@list_number = 79) THEN
+		RETURN @list_2_79
+	ELSE IF (@list_number = 80) THEN
+		RETURN @list_2_80
+	ELSE IF (@list_number = 81) THEN
+		RETURN @list_2_81
+	ELSE IF (@list_number = 82) THEN
+		RETURN @list_2_82
+	ELSE IF (@list_number = 83) THEN
+		RETURN @list_2_83
+	ELSE IF (@list_number = 84) THEN
+		RETURN @list_2_84
+	ELSE IF (@list_number = 85) THEN
+		RETURN @list_2_85
+	ELSE IF (@list_number = 86) THEN
+		RETURN @list_2_86
+	ELSE IF (@list_number = 87) THEN
+		RETURN @list_2_87
+	ELSE IF (@list_number = 88) THEN
+		RETURN @list_2_88
+	ELSE IF (@list_number = 89) THEN
+		RETURN @list_2_89
+	ELSE IF (@list_number = 90) THEN
+		RETURN @list_2_90
+	ELSE IF (@list_number = 91) THEN
+		RETURN @list_2_91
+	ELSE IF (@list_number = 92) THEN
+		RETURN @list_2_92
+	ELSE IF (@list_number = 93) THEN
+		RETURN @list_2_93
+	ELSE IF (@list_number = 94) THEN
+		RETURN @list_2_94
+	ELSE IF (@list_number = 95) THEN
+		RETURN @list_2_95
+	ELSE IF (@list_number = 96) THEN
+		RETURN @list_2_96
+	ELSE IF (@list_number = 97) THEN
+		RETURN @list_2_97
+	ELSE IF (@list_number = 98) THEN
+		RETURN @list_2_98
+	ELSE IF (@list_number = 99) THEN
+		RETURN @list_2_99
+	END
+END
+
